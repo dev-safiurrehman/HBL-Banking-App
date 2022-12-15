@@ -11,45 +11,6 @@
     android:foregroundGravity="right"
     tools:ignore="HardcodedText">
 
-
-    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        tools:context=".Loginpage">-->
-
-    <!--        <com.google.android.material.bottomappbar.BottomAppBar-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_gravity="bottom"-->
-    <!--            android:id="@+id/bottomAppBar"-->
-    <!--            app:fabCradleMargin="10dp"-->
-    <!--            app:fabCradleRoundedCornerRadius="10dp"-->
-    <!--            app:fabCradleVerticalOffset="10dp"-->
-    <!--            >-->
-    <!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
-    <!--                android:layout_width="match_parent"-->
-    <!--                android:layout_height="match_parent"-->
-    <!--                android:id="@+id/bottomNavigationView"-->
-    <!--                android:layout_marginRight="16dp"-->
-    <!--                app:menu="@menu/navigation_menu"-->
-    <!--                android:background="@drawable/transparent_background"-->
-
-    <!--                />-->
-    <!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
-
-    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-    <!--            android:id="@+id/fab"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:src="@drawable/ic_baseline_qr_code_24"-->
-    <!--            app:layout_anchor="@id/bottomAppBar"-->
-
-    <!--            app:layout_anchorGravity="center" />-->
-
-
-    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
-
-
     <!-- this the navigation view which draws and shows the navigation drawer -->
     <!-- include the menu created in the menu folder -->
     <LinearLayout
@@ -174,7 +135,54 @@
         android:fitsSystemWindows="true"
         app:menu="@menu/navigation_menu" />
 
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+       >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomAppBar"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavigationView"
+                android:layout_marginRight="16dp"
+                app:menu="@menu/navigation_menu"
+                android:background="@drawable/transparent_background"
+
+                />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_qr_code_24"
+
+            app:layout_anchor="@id/bottomAppBar"
+            app:layout_anchorGravity="center" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
 </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
 
 
 
